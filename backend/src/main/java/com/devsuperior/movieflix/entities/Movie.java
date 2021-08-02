@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,10 +22,18 @@ public class Movie  implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Long id;
+	
+	@Column(columnDefinition = "TEXT")
 	String title;
+	
+	@Column(columnDefinition = "TEXT")
 	String subTitle;
 	Integer year;
+	
+	@Column(columnDefinition = "TEXT")
 	String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
 	String synopsis;
 	
 	@ManyToOne

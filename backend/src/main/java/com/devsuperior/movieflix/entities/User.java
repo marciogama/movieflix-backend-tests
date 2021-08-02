@@ -30,7 +30,7 @@ public class User  implements Serializable{
 	
 	@Column(unique = true)
 	String email;
-	String passord;
+	String password;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "tb_user_role",
@@ -44,12 +44,12 @@ public class User  implements Serializable{
 	public User() {
 	}
 
-	public User(Long id, String name, String email, String passord, Set<Role> roles) {
+	public User(Long id, String name, String email, String password, Set<Role> roles) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.passord = passord;
+		this.password = password;
 		this.roles = roles;
 	}
 
@@ -78,11 +78,11 @@ public class User  implements Serializable{
 	}
 
 	public String getPassord() {
-		return passord;
+		return password;
 	}
 
-	public void setPassord(String passord) {
-		this.passord = passord;
+	public void setPassord(String password) {
+		this.password = password;
 	}
 
 	public Set<Role> getRoles() {
