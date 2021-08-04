@@ -1,6 +1,7 @@
 package com.devsuperior.movieflix.services;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +24,12 @@ public class GenreService {
 		List<Genre> list = repository.findAll();
 		List<GenreDTO> listDto = list.stream().map(x -> new GenreDTO(x)).collect(Collectors.toList());
 		return listDto;
+	}
+
+	@Transactional(readOnly = true)
+	public GenreDTO findById(Long id) {
+		Optional<Genre> obj = repository.findById(id);
+		Genre entity = obj.get();
+		return new GenreDTO(entity);
 	}
 }
