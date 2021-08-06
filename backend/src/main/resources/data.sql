@@ -12,6 +12,78 @@ INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
 INSERT INTO tb_genre (name) VALUES ('Aventura');
 INSERT INTO tb_genre (name) VALUES ('Comédia');
 INSERT INTO tb_genre (name) VALUES ('Infantil');
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Auto ajuda');
+INSERT INTO tb_genre (name) VALUES ('Aventura');
+INSERT INTO tb_genre (name) VALUES ('Comédia');
+INSERT INTO tb_genre (name) VALUES ('Infantil');
 
 INSERT INTO tb_movie (title, sub_title, year, img_url, synopsis, genre_id) VALUES ('Star Wars: Episódio I - A ameaça Fantasma','Cada Geração tem uma lenda. Toda jornada tem um primeiro passo. Toda saga tem um começo', 1999,'https://www.themoviedb.org/t/p/original/9r4IRZUJ564J38EcLRPM9uUZlVp.jpg','Enquanto resgatam a Rainha Amidala, governante de um planeta pacífico invadido por forças ameaçadoras, os Cavaleiros Jedi Obi-Wan Kenobi e Qui-Gon Jinn descobrem Anakin Skywalker, uma criança prodígio de 9 anos excepcionalmente poderosa na Força.',1);
 INSERT INTO tb_movie (title, sub_title, year, img_url, synopsis, genre_id) VALUES ('Jornada nas Estrelas','To boldly go where no man has gone before', 1966,'https://www.themoviedb.org/t/p/original/ywK4VrR7vL56mDGXDLMtFypwqA8.jpg','O imperturbável Cap. James T. Kirk leva a icônica e intergalática tripulação da USS Enterprise nesta série pioneira sobre a exploração espacial.',1);
