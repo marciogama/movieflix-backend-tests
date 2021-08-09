@@ -18,18 +18,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.devsuperior.movieflix.dto.GenreDTO;
-import com.devsuperior.movieflix.services.GenreService;
+import com.devsuperior.movieflix.dto.MovieDTO;
+import com.devsuperior.movieflix.services.MovieService;
 
 @RestController
-@RequestMapping(value = "/genres")
-public class GenreResource {
+@RequestMapping(value = "/movies")
+public class MovieResource {
 	
 	@Autowired
-	private GenreService service;
+	private MovieService service;
 
 	@GetMapping
-	public ResponseEntity<Page<GenreDTO>> findAllByPages(
+	public ResponseEntity<Page<MovieDTO>> findAllByPages(
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "12") Integer linesPerPage,
 			@RequestParam(value = "direction", defaultValue = "ASC") String direction,
@@ -38,18 +38,18 @@ public class GenreResource {
 		
 		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
 		
-		Page<GenreDTO> list = service.findAllPaged(pageRequest);
+		Page<MovieDTO> list = service.findAllPaged(pageRequest);
 		return ResponseEntity.ok().body(list);
 	}
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<GenreDTO> findById(@PathVariable Long id){
-		GenreDTO dto = service.findById(id);
+	public ResponseEntity<MovieDTO> findById(@PathVariable Long id){
+		MovieDTO dto = service.findById(id);
 		return ResponseEntity.ok().body(dto);
 	}
 	
 	@PostMapping
-	public ResponseEntity<GenreDTO> insert(@RequestBody GenreDTO dto){
+	public ResponseEntity<MovieDTO> insert(@RequestBody MovieDTO dto){
 		dto = service.insert(dto);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{id}")
 				.buildAndExpand(dto.getId()).toUri();
@@ -57,7 +57,7 @@ public class GenreResource {
 	}
 	
 	@PutMapping(value = "/{id}")
-	public ResponseEntity<GenreDTO> update(@PathVariable Long id ,@RequestBody GenreDTO dto){
+	public ResponseEntity<MovieDTO> update(@PathVariable Long id ,@RequestBody MovieDTO dto){
 		dto = service.update(id, dto);
 		return ResponseEntity.ok().body(dto);
 	}
