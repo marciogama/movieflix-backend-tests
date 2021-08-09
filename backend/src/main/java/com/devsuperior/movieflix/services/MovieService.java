@@ -42,6 +42,7 @@ public class MovieService {
 	@Transactional
 	public MovieDTO insert(MovieDTO dto) {
 		Movie entity = new Movie();
+		copyDtoToEntity(dto,entity);
 		//entity.setName(dto.getName());
 		entity = repository.save(entity);
 		return new MovieDTO(entity);
@@ -51,6 +52,7 @@ public class MovieService {
 	public MovieDTO update(Long id, MovieDTO dto) {
 		try {
 			Movie entity = repository.getOne(id);
+			copyDtoToEntity(dto,entity);
 			//entity.setName(dto.getName());
 			entity = repository.save(entity);
 			return new MovieDTO(entity);
@@ -70,5 +72,15 @@ public class MovieService {
 		catch (DataIntegrityViolationException e) {
 			throw new DatabaseException("Integrity violation");
 		}
+	}
+	
+	private void copyDtoToEntity(MovieDTO dto, Movie entity) {
+		
+		entity.setTitle(dto.getTitle());
+		entity.setSubTitle(dto.getSubTitle());
+		entity.setYear(dto.getYear());
+		entity.setImgUrl(dto.getImgUrl());
+		entity.setSynopsis(dto.getSynopsis());
+		entity.setGenre(dto.getGenre());
 	}
 }
