@@ -25,12 +25,12 @@ public class User  implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Long id;
-	String name;
+	private Long id;
+	private String name;
 	
 	@Column(unique = true)
-	String email;
-	String password;
+	private String email;
+	private String password;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "tb_user_role",
@@ -88,16 +88,8 @@ public class User  implements Serializable{
 		return roles;
 	}
 
-	public void setRoles(Set<Role> roles) {
-		this.roles = roles;
-	}
-	
 	public List<Review> getReviews() {
 		return reviews;
-	}
-
-	public void setReviews(List<Review> reviews) {
-		this.reviews = reviews;
 	}
 
 	@Override

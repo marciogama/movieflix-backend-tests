@@ -21,24 +21,24 @@ public class Movie  implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Long id;
+	private Long id;
 	
 	@Column(columnDefinition = "TEXT")
-	String title;
+	private String title;
 	
 	@Column(columnDefinition = "TEXT")
-	String subTitle;
-	Integer year;
+	private String subTitle;
+	private Integer year;
 	
 	@Column(columnDefinition = "TEXT")
-	String imgUrl;
+	private String imgUrl;
 	
 	@Column(columnDefinition = "TEXT")
-	String synopsis;
+	private String synopsis;
 	
 	@ManyToOne
 	@JoinColumn(name = "genre_id")
-	Genre genre;
+	private Genre genre;
 
 	@OneToMany(mappedBy = "movie")
 	private List<Review> reviews = new ArrayList<>();
